@@ -186,6 +186,10 @@ ul li:hover ul.dropdown {
         width: 90%;
         margin: 15px auto;
     }
+
+    ul li a {
+        font-size: 18px; /* Larger font size for navbar links */
+    }
 }
 
 @media (max-width: 480px) {
@@ -195,11 +199,15 @@ ul li:hover ul.dropdown {
 
     ul li a {
         padding: 10px;
-        font-size: 14px;
+        font-size: 20px; /* Even larger font size for navbar links */
     }
 
     .section-heading {
         font-size: 30px;
+    }
+
+    .new-arrivals-product-section {
+        grid-template-columns: 1fr; /* Single column for product cards */
     }
 
     .product-card {
