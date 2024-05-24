@@ -101,9 +101,6 @@ ul li:hover ul.dropdown {
     transition: transform 0.2s;
 }
 
-.product-card:hover {
-    transform: scale(1.05);
-}
 
 .product-card .card-details {
     display: flex;
@@ -162,6 +159,7 @@ ul li:hover ul.dropdown {
     display: flex;
     text-align: center;
     justify-content: center;
+    margin-bottom: 25px;
 }
 
 /* Responsive styles */
@@ -199,7 +197,7 @@ ul li:hover ul.dropdown {
 
     ul li a {
         padding: 10px;
-        font-size: 20px; /* Even larger font size for navbar links */
+        font-size: 18px; /* Even larger font size for navbar links */
     }
 
     .section-heading {
@@ -219,4 +217,23 @@ ul li:hover ul.dropdown {
     .product-card .button button {
         font-size: 16px;
     }
+}
+.about-text{
+  font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 10px;
+    
+}
+.about{
+  display: flex;
+  justify-content: space-around;
+}
+.payment, .satisfaction, .delivery{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 60px;
+  
+  
 }
