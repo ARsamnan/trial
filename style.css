@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins';
- 
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Base styles */
 .cover {
-
     background-image: url(img/cover.jpg);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     margin-top: 0;
     display: flex;
@@ -18,37 +18,40 @@
     color: black;
     align-items: flex-start;
     height: 60vh;
-
-
+    padding: 20px;
 }
-.section-heading{
+
+.section-heading {
     text-align: center;
     font-family: "Fjalla One", sans-serif;
     font-size: 60px;
-    
+    margin: 20px 0;
 }
-.info{
-    font-family: 'Poppins';
+
+.info {
+    font-family: 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 15px;
 }
-.get{
-  font-family: 'Poppins';
-  font-weight: 700;
-  font-size: 15px;
-  margin-top: 15px;
+
+.get {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    margin-top: 15px;
 }
 
-/* navbar start */
-ul{
+/* Navbar styles */
+ul {
     list-style: none;
-   
 }
-ul li{
+
+ul li {
     display: inline-block;
     position: relative;
 }
-ul li a{
+
+ul li a {
     display: block;
     padding: 12px 15px;
     text-decoration: none;
@@ -57,12 +60,12 @@ ul li a{
     font-weight: 600;
     color: brown;
 }
-ul li ul .dropdown li{
+
+ul li ul .dropdown li {
     display: block;
-    
-   
 }
-ul li ul.dropdown{
+
+ul li ul.dropdown {
     width: auto;
     background: whitesmoke;
     position: absolute;
@@ -70,48 +73,46 @@ ul li ul.dropdown{
     display: none;
     white-space: nowrap;
 }
-ul li a:hover{
+
+ul li a:hover {
     color: black;
-
-
 }
-ul li:hover ul.dropdown{
+
+ul li:hover ul.dropdown {
     display: block;
 }
 
-.navbar-main{
+.navbar-main {
     display: flex;
     text-align: center;
     justify-content: space-between;
     margin: 15px 30px;
-    
 }
 
-/* navbar end */
-
-/* New arrivals  */
-.product-card{
+/* New Arrivals styles */
+.product-card {
     margin: 30px;
     height: 420px;
     width: 250px;
-  
-    box-shadow: 100px black;
+    box-shadow: 0px 0px 20px rgba(8, 8, 8, 0.2);
     border-radius: 25px;
     padding: 12px 30px 30px 30px;
-    box-shadow: 0px 0px 20px rgba(8, 8, 8, 0.2);
-    z-index: 3;
-  overflow: hidden;
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
-  .product-card .card-details {
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card .card-details {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    
-  }
-  
-  /* button */
-  .product-card .button{
+}
+
+/* Button styles */
+.product-card .button {
     position: relative;
     height: 50px;
     width: 100%;
@@ -119,22 +120,23 @@ ul li:hover ul.dropdown{
     margin-top: 7px;
     margin-bottom: 7px;
     overflow: hidden;
-  }
-  .product-card .button .button-layer{
+}
+
+.product-card .button .button-layer {
     position: absolute;
     height: 100%;
     width: 300%;
     left: -100%;
-    background-image: linear-gradient(135deg,#aa7757, #050505,#aa7757, #0d0d0e );
+    background-image: linear-gradient(135deg, #aa7757, #050505, #aa7757, #0d0d0e);
     transition: all 0.4s ease;
-    border-radius: 25PX;
-  }
-  .product-card .button:hover .button-layer{
+    border-radius: 25px;
+}
+
+.product-card .button:hover .button-layer {
     left: 0;
-  
-  
-  }
-  .product-card .button button{
+}
+
+.product-card .button button {
     position: relative;
     height: 100%;
     width: 100%;
@@ -145,21 +147,68 @@ ul li:hover ul.dropdown{
     font-weight: 600;
     letter-spacing: 1px;
     color: #fff;
-  }
-  
-  /* button end */
+}
 
-
-  .new-arrivals-product-section{
+/* Grid for product cards */
+.new-arrivals-product-section {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-  }
-/* new arrivals end */
+    gap: 20px;
+    padding: 20px;
+}
 
-.get-it-on{
+/* Flexbox centering */
+.get-it-on {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
 
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  
+/* Responsive styles */
+@media (max-width: 768px) {
+    .navbar-main {
+        flex-direction: column;
+        align-items: center;
+        margin: 15px 10px;
+    }
+
+    .cover {
+        height: 40vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    .section-heading {
+        font-size: 40px;
+    }
+
+    .product-card {
+        width: 90%;
+        margin: 15px auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-main {
+        margin: 10px 5px;
+    }
+
+    ul li a {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .section-heading {
+        font-size: 30px;
+    }
+
+    .product-card {
+        width: 100%;
+        margin: 10px 0;
+        padding: 10px;
+    }
+
+    .product-card .button button {
+        font-size: 16px;
+    }
 }
