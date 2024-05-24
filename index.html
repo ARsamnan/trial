@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>E-SHOP</title>
+
+    <!-- for font -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <!-- for font -->
+
+    <!-- icon -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- icon -->
+
+    <!-- sweet alert  -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- sweet alert -->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar-main">
+        <div class="logo-div">
+            <img src="logo.png" alt="" style="height: 90px; width: 90px;">
+        </div>
+        <div class="nav-list">
+            <ul class="navbar">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#New-arrivals">New Arrivals</a></li>
+                <li>
+                    <a href="">Men</a>
+                    <ul class="dropdown">
+                        <li><a href="">T-shirt</a></li>
+                        <li><a href="">Shirt</a></li>
+                        <li><a href="">Pant</a></li>
+                        <li><a href="">Shoe</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Women</a>
+                    <ul class="dropdown">
+                        <li><a href="">T-shirt</a></li>
+                        <li><a href="">Shirt</a></li>
+                        <li><a href="">Pant</a></li>
+                    </ul>
+                </li>
+                <li><a href="">Review</a></li>
+                <li><a href="">About</a></li>
+                <li><a href=""><i class='bx bx-shopping-bag' style="font-weight: 700;"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="cover" id="Home"></section>
+<!--  -->
+<!-- Newww arrivalsssss -->
+<!--  -->
+    <div class="new-arrivals" id="New-arrivals">
+        <h1 class="section-heading">New Arrivals</h1>
+    </div>
+
+    <div class="new-arrivals-product-section">
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t1.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Olive Green</span>
+                <span class="info">Polo Shirt</span>
+                <span class="info">470BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t2.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Dark Forest</span>
+                <span class="info">T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t3.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Browney</span>
+                <span class="info">T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t4.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Ocean Green</span>
+                <span class="info"> T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t5.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Silver Stone</span>
+                <span class="info"> T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t6.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Never Give Up</span>
+                <span class="info"> T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t7.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Red Slush</span>
+                <span class="info"> T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <div class="main-images">
+                <img class="t1" src="img/t8.jpg" height="260px" width="240px" style="border-radius: 15px; margin-top: 12px;">
+            </div>
+            <div class="card-details">
+                <span class="info">Sea Blue</span>
+                <span class="info"> T-Shirt</span>
+                <span class="info">400BDT</span>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bx-star'></i>
+                </div>
+            </div>
+            <div class="button">
+                <div class="button-layer"></div>
+                <button class="button-add">Add To Cart</button>
+            </div>
+        </div>
+
+
+       
+        
+    </div>
+
+    <!-- Newww arrivalsssss -->
+    <!-- Newww arrivalsssss -->
+    <!-- Newww arrivalsssss -->
+
+
+    <div class="get-it-on">
+        <span class="get">GET 5% OFF ON APP
+        </span>
+        <div class="playstore"><img src="img/playstore.png" alt="" height="50px" width="135"></div>
+        <div class="appstore"><img src="img/appstore.png" alt="" height="40px" width="135" style="margin-top: 5px;"></div>
+    </div>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const addToCartButtons = document.querySelectorAll('.product-card .button .button-add');
+
+            addToCartButtons.forEach(function (button) {
+                button.addEventListener('click', function () {
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'Added to Cart',
+                        text: 'The item has been added to your cart.',
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                });
+            });
+        });
+    </script>
+    <!-- javascript -->
+</body>
+
+</html>
